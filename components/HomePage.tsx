@@ -21,7 +21,7 @@ interface HomePageProps {
 export function HomePage({ currentModel }: HomePageProps) {
   const [step, setStep] = useState<"repository" | "prompt">("prompt");
   const [repositoryConfig, setRepositoryConfig] = useState<RepositoryConfig>({
-    repoUrl: "https://github.com/richardjzhang/coding-agent",
+    repoUrl: "https://github.com/richardjzhang/gh-repo-agent",
     githubToken: "",
   });
   const [prompt, setPrompt] = useState(
